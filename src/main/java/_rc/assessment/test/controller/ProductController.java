@@ -56,4 +56,10 @@ public class ProductController {
         productService.deleteProduct(id);
         return listProducts(model);
     }
+
+    @GetMapping("/products/viewStats")
+    public String viewStats(Model model) {
+        model.addAttribute("total", productService.computeTotal());
+        return "products/stats";
+    }
 }

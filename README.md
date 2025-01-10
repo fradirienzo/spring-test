@@ -15,3 +15,8 @@ Per avviare la web application eseguire nel terminale il comando
 chmod +x mvnw && ./mvnw spring-boot:run
 ```
 Uscirà poi un pop-up che permette di aprire il sito web nel browser per una facile interazione con l’applicativo.
+
+### Setup con IntelliJ
+
+Ho semplicemente scaricato il progetto da IntelliJ, ho modificato il pom affinchè il server embedded fosse usato (non volevo scaricare un server), la parte successiva è uguale ad Eclipse.
+Gli screenshot dimostrano un utilizzo dell'applicazione nel caso non fosse immediata la riproduzione dei risultati.

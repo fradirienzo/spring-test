@@ -31,4 +31,13 @@ public class ProductService {
     public void deleteProduct(Long id) {
         productRepository.deleteById(id);
     }
+
+    public double computeTotal(){
+        List<Product> products = productRepository.findAll();
+        double total = 0;
+        for(Product p : products){
+            total += p.getQuantity() * p.getPrice();
+        }
+        return total;
+    }
 }
